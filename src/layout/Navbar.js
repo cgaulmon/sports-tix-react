@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faSignInAlt } from '@fortawesome/free-solid-svg-icons'
 
 class Navbar extends React.Component {
     constructor() {
@@ -20,30 +22,11 @@ class Navbar extends React.Component {
           <span className="sr-only">(current)</span>
         </a>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Features</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Pricing</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">About</a>
-      </li>
-      <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div className="dropdown-menu">
-          <a className="dropdown-item" href="#">Action</a>
-          <a className="dropdown-item" href="#">Another action</a>
-          <a className="dropdown-item" href="#">Something else here</a>
-          <div className="dropdown-divider"></div>
-          <a className="dropdown-item" href="#">Separated link</a>
-        </div>
-      </li>
     </ul>
-    <form className="form-inline my-2 my-lg-0">
-      <input className="form-control mr-sm-2" type="text" placeholder="Search" />
-      <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><FontAwesomeIcon icon={faUser} /> Sign Up</a></li>
+      <li>&nbsp;&nbsp;<a href="#"><FontAwesomeIcon icon={faSignInAlt} /> Login</a></li>
+    </ul>
   </div>
 </nav>
             </div>
