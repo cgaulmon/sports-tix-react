@@ -23,7 +23,7 @@ class Navbar extends React.Component {
         </a>
       </li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
+    <ul className="nav navbar-nav navbar-right">
       <li><a href="#"><FontAwesomeIcon icon={faUser} /> Sign Up</a></li>
       <li>&nbsp;&nbsp;<a href="#"><FontAwesomeIcon icon={faSignInAlt} /> Login</a></li>
     </ul>
